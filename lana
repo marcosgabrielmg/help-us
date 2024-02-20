@@ -50,7 +50,6 @@ public class Intervalo {
         
         if (diferencaS <= -1){
             diferencaS += 60;
-            diferencaM -= 1;
             }
         
         if (segundos > seg){
@@ -59,7 +58,6 @@ public class Intervalo {
         
         if (diferencaM <= -1){
             diferencaM += 60;
-            diferencaH -= 1;
         }
         
          if (minutos > min){
@@ -70,11 +68,8 @@ public class Intervalo {
             diferencaH = horas - h;
         }
         
-
-        
         System.out.println("A soma dos intervalos e " + somaH + ":" + somaM + ":" + somaS + "." );
         System.out.println("A diferenca dos intervalos e " + diferencaH + ":" + diferencaM + ":" + diferencaS + ".");
-
     }
     
 }
